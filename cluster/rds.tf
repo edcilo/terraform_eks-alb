@@ -47,18 +47,8 @@ resource "aws_db_instance" "eks_cluster_db" {
 
 # resource "aws_security_group" "sec_grp_rds" {
 #   vpc_id      = module.vpc.vpc_id
-              
-#   tags = {
-#     Name = "${var.cluster_name}-db-sec-group"
-#   }
 # }
 
 # resource "aws_db_instance" "db" {
-#   vpc_security_group_ids = aws_security_group.sec_grp_rds
-
 #   db_subnet_group_name = aws_db_subnet_group.db_sub_gr.id
-
-#   tags = {
-#     name = "${var.cluster_name}-rds-postgres"
-#   }
 # }
