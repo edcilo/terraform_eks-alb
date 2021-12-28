@@ -22,3 +22,23 @@ variable "module_path" {
   default = "./cluster"
   description = "The path of the current module"
 }
+
+variable "rds_storage_type" {
+  default = "gp2"
+  description = "standard, gp2, io1"
+}
+
+variable "rds_db_name" {
+  default = "mydb"
+  description = "DB name"
+}
+
+variable "rds_db_username" {
+  default = "dbuser"
+  description = "DB username"
+}
+
+variable "rds_db_password" {
+  default = "secret123."
+  description = "DB password"
+}
