@@ -3,6 +3,11 @@ variable "cluster_name" {
   description = "EKS Cluster name"
 }
 
+variable "aws_profile" {
+  default     = "default"
+  description = "AWS Profile"
+}
+
 variable "region" {
   default     = "us-east-1"
   description = "AWS region"
@@ -19,6 +24,6 @@ variable "cluster_version" {
 }
 
 variable "module_path" {
-  default = "./cluster"
+  default     = "./cluster"
   description = "The path of the current module"
 }
